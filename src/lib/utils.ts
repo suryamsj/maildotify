@@ -6,13 +6,8 @@ export function generateDotCombinations(
 	includeOriginal: boolean,
 	randomize: boolean
 ) {
-  if (username.includes('@')) {
-		if (!username.toLowerCase().endsWith('@gmail.com')) {
-			return [];
-		}
-	}
-
 	username = username.replace(/@gmail\.com$/, '');
+
 	const length = username.length;
 	const originalEmail = username + '@gmail.com';
 	let dotEmails: string[] = [];

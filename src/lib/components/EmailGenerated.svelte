@@ -4,7 +4,9 @@
 
 <section class="mb-12">
 	<div class="overflow-hidden rounded-2xl bg-white shadow-xl">
-		<div class="flex items-center justify-between border-b border-slate-100 bg-slate-50 p-4">
+		<div
+			class="flex flex-col items-start justify-between gap-3 border-b border-slate-100 bg-slate-50 p-4 sm:flex-row sm:items-center"
+		>
 			<div class="flex items-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -17,14 +19,14 @@
 				</svg>
 				<h2 class="text-lg font-semibold text-slate-800">Generated Emails</h2>
 			</div>
-			<div class="flex items-center gap-2">
+			<div class="flex w-full items-center gap-2 sm:w-auto">
 				{#if emailCount > 0}
 					<span class="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800"
 						>{emailCount} emails</span
 					>
 					<button
 						onclick={() => copyAllToClipboard(generatedEmails)}
-						class="flex cursor-pointer items-center rounded-lg bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:bg-slate-200"
+						class="ml-auto flex cursor-pointer items-center rounded-lg bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:bg-slate-200 sm:ml-0"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +48,12 @@
 			</div>
 		</div>
 
-		<div class="grid gap-px bg-slate-100 md:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-px bg-slate-100 sm:grid-cols-2 lg:grid-cols-3">
 			{#each generatedEmails as email}
 				<div class="flex items-center justify-between bg-white p-4">
 					<p
-						class="mr-2 flex-1 overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap text-slate-700"
+						class="mr-2 max-w-[calc(100%-2rem)] flex-1 truncate overflow-hidden font-mono text-sm text-slate-700"
+						title={email}
 					>
 						{email}
 					</p>

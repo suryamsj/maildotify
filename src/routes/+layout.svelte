@@ -10,6 +10,10 @@
 
 <svelte:head>
 	<title>Maildotify</title>
+	<meta
+		name="description"
+		content="Generate multiple Gmail variations by adding dots (.) in different positions. All variations deliver to your original inbox, perfect for privacy and organization."
+	/>
 </svelte:head>
 
 <Toast

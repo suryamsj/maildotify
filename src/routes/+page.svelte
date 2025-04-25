@@ -18,6 +18,12 @@
 			showToast('Please enter a valid email address', 'error');
 			return;
 		}
+		if (email.includes('@')) {
+			if (!email.toLowerCase().endsWith('@gmail.com')) {
+				showToast('Please enter a valid Gmail address', 'error');
+				return;
+			}
+		}
 		showToast('Generating emails...', 'info', 1000);
 		loading = true;
 		const username = email.replace(/@gmail\.com$/, '');
