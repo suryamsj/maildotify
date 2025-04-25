@@ -43,7 +43,7 @@
 			<div class="p-6">
 				<h3 class="mb-4 text-lg font-medium text-slate-800">
 					<span
-						class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-600"
+						class="mr-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-100 text-blue-600"
 						>1</span
 					>
 					Enter Your Gmail Address
@@ -73,7 +73,7 @@
 		<div class="p-6">
 			<h3 class="mb-4 text-lg font-medium text-slate-800">
 				<span
-					class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-600"
+					class="mr-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-100 text-blue-600"
 					>2</span
 				>
 				Email Variation Settings
