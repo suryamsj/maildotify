@@ -8,7 +8,6 @@ export function generateDotCombinations(
 ) {
   if (username.includes('@')) {
 		if (!username.toLowerCase().endsWith('@gmail.com')) {
-			showToast('Aplikasi ini hanya mendukung email Gmail', 'error');
 			return [];
 		}
 	}
