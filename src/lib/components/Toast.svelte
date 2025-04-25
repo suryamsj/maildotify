@@ -34,7 +34,6 @@
 				: 'text-blue-600';
 	});
 
-	// Otomatis sembunyikan toast setelah durasi tertentu
 	$effect(() => {
 		if (visible) {
 			const timer = setTimeout(() => {

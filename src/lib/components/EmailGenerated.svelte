@@ -49,10 +49,14 @@
 		<div class="grid gap-px bg-slate-100 md:grid-cols-2 lg:grid-cols-3">
 			{#each generatedEmails as email}
 				<div class="flex items-center justify-between bg-white p-4">
-					<p class="font-mono text-sm text-slate-700">{email}</p>
+					<p
+						class="mr-2 flex-1 overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap text-slate-700"
+					>
+						{email}
+					</p>
 					<button
 						onclick={() => copyToClipboard(email)}
-						class="cursor-pointer rounded-full p-1.5 text-slate-400 transition hover:bg-slate-100 hover:text-blue-600"
+						class="flex-shrink-0 cursor-pointer rounded-full p-1.5 text-slate-400 transition hover:bg-slate-100 hover:text-blue-600"
 						title="Copy to clipboard"
 						aria-label="copy"
 					>
